@@ -1,0 +1,49 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.container-fluid {
+	background-color: rgb(40, 167, 69);
+	background-image: none;
+}
+
+.lock-icon {
+  background: none !important;
+  border-left:none;
+}
+input, input:focus{
+        outline:none !important;
+    	-webkit-appearance:none;
+   		box-shadow: none !important;
+        -moz-box-shadow: none!important;
+        -webkit-box-shadow: none;
+}
+#Register{
+	margin-right: 18px;
+}
+.card-header h3{
+    text-align: center;
+}
+
+.card-body{
+    background: white;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.navbar-brand{
+	margin: auto;
+}
+
+.size{
+	padding: 8%;
+}
+.custom-toggler.navbar-toggler {
+	display:none;
+}
+
+@media only screen and (min-width: 1000px) {
+	.container-fluid {
+	  	background-image: url("../images/user_register.jpg");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		
+	}
+}

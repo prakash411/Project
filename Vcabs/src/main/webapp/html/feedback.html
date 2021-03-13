@@ -1,0 +1,63 @@
+<div class="container-fluid vh-100 bg-window">
+	<div class="col-md-12 min-vh-100 d-flex flex-column my-3">
+		<div class="col-lg-6 col-md-8 mx-auto ">
+        	<div class="card rounded shadow shadow-sm">
+            	<div class="card-header text-center">
+                	<h3 class="mb-0">Feedback</h3>
+            	</div>
+            	<div class="card-body">
+			        <p>
+			            Please provide your feedback below:
+			        </p>
+			        <form role="form" method="post" action="Feedback" id="feedback">
+			            <div class="row">
+			                <div class="col-sm-12 form-group">
+			                <label>How do you rate your overall experience?</label>
+			                <p>
+			                    <label class="radio-inline">
+			                    <input type="radio" name="experience" id="radio_experience" value="bad" title="bad">
+			                    <i class="fas fa-angry fa-2x" style="color: red; width: 50px;" ></i>
+			                    </label>
+			                    <label class="radio-inline">
+			                    <input type="radio" name="experience" id="radio_experience" value="average" >
+			                    <i class="fas fa-meh-rolling-eyes fa-2x" style="color: DodgerBlue; width: 50px;"></i>
+			                    </label>
+			
+			                    <label class="radio-inline">
+			                    <input type="radio" name="experience" id="radio_experience" value="good" checked>
+			                    <i class="fas fa-smile-beam fa-2x" style="color: rgb(40, 167, 69); width: 50px;"></i>
+			                    </label>
+			                </p>
+			                </div>
+			            </div>
+			            <div class="row">
+			                <div class="col-sm-12 form-group">
+			                    <label for="comments">
+			                        Comments:</label>
+			                    <textarea class="form-control" type="textarea" name="comments" id="comments" placeholder="Your Comments" maxlength="6000" rows="7"></textarea>
+			                </div>
+			            </div>
+			            <div class="row">
+			                <div class="col-sm-6 form-group">
+			                    <label for="name">
+			                        Your Name:</label>
+			                    <input type="text" class="form-control" id="name" name="name" required>
+			                </div>
+			                <div class="col-sm-6 form-group">
+			                    <label for="Contact">
+			                        Contact:</label>
+			                    <input type="tel" class="form-control form-control-md " id="Contact" name="Contact"
+						        		 pattern="[0-9]{10}" required >
+			                </div>
+			            </div>
+						<div class="row">
+			                <div class="col-sm-12 form-group">
+			                    <button type="submit" class="btn btn-lg btn-success btn-block" >Post </button>
+			                </div>
+			            </div>
+			        </form>
+        		</div>
+            </div>
+        </div>
+    </div>
+</div>

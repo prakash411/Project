@@ -1,0 +1,51 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.navbar-brand{
+	margin: auto;
+}
+.custom-toggler.navbar-toggler {
+	display:none;
+}
+.btn-success {
+    color: #28a745;
+    background:white;
+    border-color: #28a745;
+}
+.active a{
+	background-color: rgb(40, 167, 69);
+	color:white!important;
+}
+
+.custom-text{
+	font-family:cursive;
+	color: white;
+}
+.custom-text:hover
+{
+	color: white!important;
+}
+.nav-link{
+	color: white;
+}
+.custom-toggler.navbar-toggler {
+    border:none;
+    outline: 0;
+}
+.navbar-light .navbar-nav .nav-link{
+	margin: auto;
+}
+
+.navbar-light .navbar-nav .nav-item:active .nav-link{
+	background-color: rgb(40, 167, 69);
+	color:white!important;
+}
+
+.navbar-light .navbar-nav .nav-item:hover .nav-link{
+	background-color: white!important;
+    color: rgb(40, 167, 69)!important;
+}
+.custom-active :active{
+	background-color: rgb(40, 167, 69);
+	color:white!important;
+}

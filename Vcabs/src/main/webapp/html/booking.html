@@ -1,0 +1,92 @@
+<script src="js/json.js"></script>
+<script src="js/map.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUDiKPR7wO3UOt09Ve0vUct5nq_h00828&libraries=places&callback=initMap" async defer></script>
+
+<div class="container-fluid  bg-window">
+	<div class="row  ">
+		<div class="col-sm-6">
+        	<div class="card  rounded shadow shadow-sm my-2">
+            	<div class="card-header text-center">
+                	<h3 class="">Book Your Ride Now...</h3>
+            	</div>
+       			<div class="card-body">
+                	<form class="form " role="form" action="Booking" method="post" >
+                		<div class="form-group" style="margin-top: 15px;">
+						    <div class="col-auto ">
+						      	<label  for="inlineFormInputGroup"><strong> <i class="fas fa-map-marker-alt" style="color: green;"></i> Enter Pickup</strong></label>
+						      	<input type="text" class="form-control " id="origin-input" name="pickup" required placeholder="Pickup">
+						      	<input type="hidden" name="lat" id="lat" value="" />
+								<input type="hidden" name="lng" id="lng" value="" />
+								<input type="hidden" name="amount" id="amount" value="" />
+						    </div>
+						</div>	
+						<div class="form-group" style="margin-top: 15px;">
+						    <div class="col-auto">
+						      	<label  for="inlineFormInputGroup"><strong> <i class="fas fa-map-marker-alt" style="color: red;"></i> Enter Destination</strong></label>
+						      	<input type="text" class="form-control " id="destination-input" name="destination" required placeholder="Destination" onfocusout="json()">
+						    </div>
+						</div>	
+						<div class="form-group" style="margin-top: 15px;">
+						    <div class="col-auto">
+						      	<label  for="inlineFormInputGroup"><strong> <i class="fas fa-car" ></i> Select Car Type</strong></label>
+						      	<select id="cartype" name="cartype" class="form-control" onchange="gettype()">
+						      		 <option disabled selected value> -- select an option -- </option>
+				                  	<option value="10">Micro</option>
+				                  	<option value="11">Mini</option>
+				                  	<option value="13">Prime</option>
+				                </select>
+						    </div>
+						</div>
+						<button type="submit" class="btn btn-success btn-lg float-right mr-3" name="submit" id="Booking">Book Now</button>
+					</form>
+        		</div>
+      		</div>
+ 		</div>
+ 		<div class="col-sm-6 ">
+        	<div class="card  rounded shadow shadow-sm my-2">
+            	<div class="card-header text-center">
+                	<h3 class="">Car Booking Structure</h3>
+            	</div>
+       			<div class="card-body">
+                	<div class="table-responsive">
+				        <table class="table">
+				          <thead>
+				            <tr>
+				              <th scope="col">Car Type</th>
+				              <th scope="col">Car Model</th>
+				              <th scope="col"><i class="fa fa-rupee"></i> / KM</th>
+				            </tr>
+				          </thead>
+				          <tbody>
+				            <tr>
+				              <th scope="row">Micro</th>
+				              <td><img alt="" src="images/micro.jpg"></td>
+				              <td><i class="fa fa-rupee"></i> 10.00</td>
+				            </tr>
+				            <tr>
+				              <th scope="row">Mini</th>
+				              <td><img alt="" src="images/mini.PNG"> </td>
+				              <td><i class="fa fa-rupee"></i> 11.00</td>
+				            </tr>
+				            <tr>
+				              <th scope="row">Prime</th>
+				              <td><img alt="" src="images/prime.PNG"></td>
+				              <td><i class="fa fa-rupee"></i> 13.00</td>
+				            </tr>				 
+				          </tbody>
+				        </table>
+				        <h3 ><pre><b>Total Cost = <i class="fa fa-rupee"></i> </b><strong id="distance"></strong></pre></h3>     
+				      </div>
+        		</div>
+      		</div>
+ 		</div>
+	</div>
+</div>
+  
+<div class="container-fluid shadow shadow-sm mt-2" id="map" style="width:100%;height:400px;margin-bottom: 15px;">
+</div>
+
+
+
+ 
+

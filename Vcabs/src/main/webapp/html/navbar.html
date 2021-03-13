@@ -1,0 +1,47 @@
+
+		
+<nav class="navbar navbar-expand-lg vw-auto vh-auto mw-auto navbar-light bg-light  border-bottom py-0 stick-top">
+	<button class="navbar-toggler  custom-toggler"  data-toggle="collapse" data-target=".sidebar">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<a class="navbar-brand " href="index.jsp">
+		<!-- <img src="images/car.png" alt=" "  width="30" height="30">  --> 
+		<span class="navbar-text"><i class="fab fa-vuejs fa-lg"></i>Cabs</span>
+	</a>
+	<div class="collapse navbar-collapse" id="items">
+		<ul class="navbar-nav ml-auto ">
+	    	<li class="nav-item " id="login">
+	        	<a href="login.jsp" class="nav-link " style="padding: 10px 20px 10px 20px; " >Sign in</a>
+	      	</li>
+			<li class="nav-item dropdown " id="register">
+		        <a class="nav-link dropdown-toggle " style="padding: 10px 20px 10px 20px; " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Register
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		        	<span class="custom-active"><a class="dropdown-item" href="user_register.jsp">User Registration</a></span>
+		           	<div class="dropdown-divider"></div>
+		          	<span class="custom-active"><a class="dropdown-item" href="driver_register.jsp">Driver Registration</a></span>
+		        </div>
+			</li>
+			<li class="nav-item " id="Dprofile">
+	        	<a href="DriverProfile.jsp" class="nav-link custom-hover" style="padding: 10px 20px 10px 20px; " >dProfile</a>
+	      	</li>
+			<li class="nav-item " id="Uprofile">
+	        	<a href="UserProfile.jsp" class="nav-link custom-hover" style="padding: 10px 20px 10px 20px; " >Profile</a>
+	      	</li>
+	      	<li class="nav-item " id="ride">
+	        	<a href=MyRide class="nav-link custom-hover" style="padding: 10px 20px 10px 20px; " >My Ride</a>
+	      	</li>
+	      	<li class="nav-item " id="aboutUs">
+	        	<a href="aboutUs.jsp" class="nav-link custom-hover" style="padding: 10px 20px 10px 20px; " >AboutUs</a>
+	      	</li>	      	
+	      	<li class="nav-item " id="logout">
+	      		<form action="Logout" method="post">
+	      			<input type="submit" class="nav-link custom-hover" value="Logout"
+	      				style="padding: 10px 20px 10px 20px; border:none; outline: 0;">
+	      		</form>
+	      		
+	      	</li>
+		</ul>
+  </div>
+</nav>

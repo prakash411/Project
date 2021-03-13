@@ -1,0 +1,30 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.img {
+	background-color:rgb(40, 167, 69);
+	background-image: none;
+}
+@media only screen and (min-width: 768px) {
+	.img{		
+	  	background-image: url("../images/pay.jpg");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		background-attachment: fixed ;
+	}
+	.content {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  padding: 20px;
+}
+}
+
+.container{
+	margin-top: 10%;
+}
+.content {
+  position: absolute;
+  color: #f1f1f1;
+  padding: 20px;
+}

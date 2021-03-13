@@ -1,0 +1,56 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.container-fluid {
+	background-color:rgb(40, 167, 69);
+	background-image: none;
+}
+
+.lock-icon {
+  background: none;
+  border-left:none;
+}
+input, input:focus{
+        outline:none !important;
+    	-webkit-appearance:none;
+   		box-shadow: none !important;
+        -moz-box-shadow: none!important;
+        -webkit-box-shadow: none;
+}
+
+#btnLogin{
+	margin-right: 14px;
+}
+.btn-success {
+    color: #28a745;
+    background:white;
+    border-color: #28a745;
+}
+#Forgot{
+	margin-left: 18px;
+}
+.card-header h3{
+    text-align: center;
+}
+.card-body{
+    padding: 10%;
+    background: white;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.custom-toggler.navbar-toggler {
+	display:none;
+}
+.navbar-brand{
+	margin: auto;
+}
+
+@media only screen and (min-width: 768px) {
+	.container-fluid {
+		
+	  	background-image: url("../images/login.jpg");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		
+	}
+	
+}
